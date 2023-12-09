@@ -1,0 +1,134 @@
+/*Paars #5722CD;*/
+/*Blauw #4845E4;*/
+/*Roze #ED4385;*/
+/*Zwart #0C0C0C (voor standaard tekst);*/
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+/*                                                                                 Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
+/*Grijs #7A7A7A (voor de service-tegel tekst);*/
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h6 {
+    color: black;
+}
+body {
+    font-family: 'Merriweather', serif;
+}
+button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #ED4385;
+    color: #fff;
+    background-color: #ED4385;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+.main-section-one {
+    display: flex;
+    border: 2px solid;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.main-div-one {
+    display: flex;
+    flex-basis: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    color: #5722CD;
+    text-align: center;
+}
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+.headercontainer {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    background-color: #4845E4;
+    height: 600px;
+    width: 100%;
+    flex-direction: row;
+}
+.outercontainer {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1550px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+.innercountainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 600px;
+    align-self: center;
+    color: white;
+    align-items: center;
+    align-content: center;
+    height: 200px;
+    text-align: center;
+}
+.navcountainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    width: 90vw;
+    color: white;
+}
+.navcountainer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 350px;
+}
+.headercontainer span {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
